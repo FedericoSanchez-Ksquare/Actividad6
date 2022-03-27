@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+body {
+  background-color: #472383;
+  margin: 0;
+  padding: 0;
+}
+.grid-container{
+    width: auto;
+   margin:10px 30px;
+   padding:10px;
+  background-color: white;
+  display: grid;
+  grid-gap:1rem 1rem;
+  grid-template-columns: 2fr 2fr 1fr 2fr;
+  grid-template-rows: 100px 200px 100px;
+  grid-template-areas: "header header header header"
+"main main main sidebar"
+"footer footer footer footer";
+
+}
+
+.grid-item1{
+  grid-area: header;
+  background-color: #472383;
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+}
+.grid-item2{
+  grid-area: main;
+  background-color: #472383;
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+}
+.grid-item3{
+  grid-area: sidebar;
+  background-color: rgb(185, 15, 129);
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+}
+.grid-item4{
+  grid-area: footer;
+  background-color: rgb(185, 15, 129);
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class='grid-container'>
+        <div class='grid-item1'> Header </div>
+        <div class='grid-item2'> Main </div>
+        <div class='grid-item3'> Sidebar </div>
+        <div class='grid-item4'> Footer </div>
+    </div>
+</body>
+</html>

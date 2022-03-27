@@ -30,6 +30,8 @@
         
     }
     .post-card {
+        display: flex;
+        flex-direction: column;
         background-color: white;
         border-radius: 15px;
         padding: 40px;
@@ -40,10 +42,13 @@
         background-color: rgb(61, 64, 143);
         color: white;
     }
-    .user-space{
-             
-        position: relative;
-        
+    .user-space{     
+        display: flex;
+        flex-direction: row;
+    }
+    .user-info{
+        display: flex;
+        flex-direction: column;
     }
 
     .name{
@@ -98,8 +103,10 @@
         <div class="post-card one" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">Clifford el perro</p>
-                <p class="title">Perro grande</p>
+                <div class="user-info">
+                    <p class="name">Clifford el perro</p>
+                    <p class="title">Perro grande</p>
+                </div>
             </div>
             <div class="post-space">
                 <h2>
@@ -115,8 +122,10 @@
         <div class="post-card two" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">Jonathan Waldo</p>
-                <p class="title">Donde esta</p>
+                <div class="user-info">
+                    <p class="name">Jonathan Waldo</p>
+                    <p class="title">Donde esta</p>
+                </div>
             </div>
             <div class="post-space">
                 <h2>

@@ -10,15 +10,12 @@
     html , body{
         background-color: rgb(127, 161, 179);
         height: 100%;
-        width: 100%;
-        
-        
+        width: 100%;  
     }
     .container{
         display:flex;
         justify-content: space-evenly; 
-        margin: auto;
-        
+        margin: auto;    
     }
     .wrapper{
         display: grid;
@@ -32,6 +29,7 @@
     .post-card {
         display: flex;
         flex-direction: column;
+        
         background-color: white;
         border-radius: 15px;
         padding: 40px;
@@ -45,10 +43,18 @@
     .user-space{     
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     .user-info{
-        display: flex;
-        flex-direction: column;
+           
+    }
+
+    img{
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin-right: 20px;
     }
 
     .name{
@@ -64,14 +70,6 @@
     }
     h4{
         font-weight: 100;
-    }
-
-    img{
-        border-radius: 50px;
-        height: 50px;
-        width: 50px;
-        float: left;
-        margin-right: 20px;
     }
 
     .one{
@@ -142,8 +140,10 @@
         <div class="post-card three" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">Kira Kira</p>
-                <p class="title">Verified Kira</p>
+                <div class="user-info">
+                    <p class="name">Kira Kira</p>
+                    <p class="title">Verified Kira</p>
+                </div>
             </div>
             <div class="post-space">
                 <h2>
@@ -162,8 +162,10 @@
         <div class="post-card four" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">Clifford el perro</p>
-                <p class="title">Perro grande</p>
+                <div class="user-info">
+                    <p class="name">Clifford el perro</p>
+                    <p class="title">Perro grande</p> 
+                </div>
             </div>
             <div class="post-space">
                 <h2>
@@ -179,8 +181,10 @@
         <div class="post-card five">
             <div class="user-space">
                 <img src="/images/Survival_.webp">
-                <p class="name">Patrick Star</p>
-                <p class="title">Pinhead Larry</p>
+                <div class="user-info">
+                    <p class="name">Patrick Star</p>
+                    <p class="title">Pinhead Larry</p>
+                </div>
             </div>
             <div class="post-space">
                 <h2>

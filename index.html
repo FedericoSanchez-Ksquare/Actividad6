@@ -8,9 +8,11 @@
 </head>
 <style>
     html , body{
-        background-color: rgb(184, 208, 216);
+        background-color: rgb(127, 161, 179);
         height: 100%;
         width: 100%;
+        
+        
     }
     .container{
         display:flex;
@@ -21,65 +23,83 @@
     .wrapper{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 600px;
-        
-        grid-gap: 10px;
+        grid-gap: 40px;
+        /* grid-auto-rows: minmax(100px, 3fr); */
+        grid-auto-rows: minmax(100px, 400px);
+        padding: 50px;
         
     }
-    div.post-card {
-        background-color: beige;
-        border-radius: 20px;
-        padding: 30px;
-        /* margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px; */
-        max-height: auto;
-        margin: auto;
-        
-        
+    .post-card {
+        background-color: white;
+        border-radius: 15px;
+        padding: 40px;
+        overflow: hidden;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;     
+    }
+    .post-card:hover{
+        background-color: rgb(61, 64, 143);
+        color: white;
     }
     .user-space{
              
         position: relative;
         
     }
-    .post-space{ 
-        
+
+    .name{
+        font-weight: 900;
     }
+
+    .title{
+        font-weight: 100;
+    }
+
+    h2{
+        font-weight: 900;
+    }
+    h4{
+        font-weight: 100;
+    }
+
     img{
-        border-radius: 60px;
-        height: 60px;
-        width: 60px;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
         float: left;
         margin-right: 20px;
     }
 
     .one{
-        
+        grid-column: 1 / 3;
+        grid-row: 1;
     }
     .two{
-       
+       grid-column: 3 / 4;
+       grid-row: 1;
     }
     .three{
-        
+        grid-column: 4;
+        grid-row: 1 / 3 ;
+
     }
     .four{
-        
+        grid-column: 1;
+        grid-row: 2;
     }
     .five{
-        
+        grid-column: 2/4;
+        grid-row: 2;
     }
 
 
 </style>
 <body>
     <div class="wrapper">
-        <div class="post-card one" style="background-color: blue;">
+        <div class="post-card one" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">name</p>
-                <p class="title">title</p>
+                <p class="name">Clifford el perro</p>
+                <p class="title">Perro grande</p>
             </div>
             <div class="post-space">
                 <h2>
@@ -87,19 +107,34 @@
                     optio tenetur deserunt ullam rem, repellat nisi doloribus a fugit nam quia laborum accusantium ut aliquam.
                 </h2>
                 <h4>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolor doloremque atque amet nulla
-                    exercitationem, cupiditate distinctio modi repellat nam asperiores libero omnis, error ad, molestiae magni
-                    qui
-                    dolorem? Porro?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, maiores fugit soluta, quod ipsam nam quidem nobis consectetur libero quaerat aliquid explicabo ab eveniet dolor ducimus enim harum nesciunt tempora.
                 </h4>
             </div>
         </div>
         
-        <div class="post-card two" style="background-color: red;">
+        <div class="post-card two" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">name</p>
-                <p class="title">title</p>
+                <p class="name">Jonathan Waldo</p>
+                <p class="title">Donde esta</p>
+            </div>
+            <div class="post-space">
+                <h2>
+                    adipisicing elit. Reiciendis maxime necessitatibus amet sed obcaecati
+                    optio tenetur 
+                </h2>
+                <h4>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolor doloremque atque amet nulla
+                    exercitationem
+                </h4>
+            </div>
+        </div>
+
+        <div class="post-card three" >
+            <div class="user-space">
+                <img src="/images/hellothere.jpeg">
+                <p class="name">Kira Kira</p>
+                <p class="title">Verified Kira</p>
             </div>
             <div class="post-space">
                 <h2>
@@ -115,51 +150,28 @@
             </div>
         </div>
 
-        <div class="post-card three" style="background-color: white;">
+        <div class="post-card four" >
             <div class="user-space">
                 <img src="/images/hellothere.jpeg">
-                <p class="name">name</p>
-                <p class="title">title</p>
+                <p class="name">Clifford el perro</p>
+                <p class="title">Perro grande</p>
             </div>
             <div class="post-space">
                 <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime necessitatibus amet sed obcaecati
-                    optio tenetur deserunt ullam rem, repellat nisi doloribus a fugit nam quia laborum accusantium ut aliquam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    optio 
                 </h2>
                 <h4>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolor doloremque atque amet nulla
-                    exercitationem, cupiditate distinctio modi repellat nam asperiores libero omnis, error ad, molestiae magni
-                    qui
-                    dolorem? Porro?
-                </h4>
-            </div>
-        </div>
-
-        <div class="post-card four" style="background-color: purple;">
-            <div class="user-space">
-                <img src="/images/hellothere.jpeg">
-                <p class="name">name</p>
-                <p class="title">title</p>
-            </div>
-            <div class="post-space">
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime necessitatibus amet sed obcaecati
-                    optio tenetur deserunt ullam rem, repellat nisi doloribus a fugit nam quia laborum accusantium ut aliquam.
-                </h2>
-                <h4>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolor doloremque atque amet nulla
-                    exercitationem, cupiditate distinctio modi repellat nam asperiores libero omnis, error ad, molestiae magni
-                    qui
-                    dolorem? Porro?
+                    Lorem ipsum dolor, sit amet consectetur 
                 </h4>
             </div>
         </div>
 
         <div class="post-card five">
             <div class="user-space">
-                <img src="/images/hellothere.jpeg">
-                <p class="name">name</p>
-                <p class="title">title</p>
+                <img src="/images/Survival_.webp">
+                <p class="name">Patrick Star</p>
+                <p class="title">Pinhead Larry</p>
             </div>
             <div class="post-space">
                 <h2>
